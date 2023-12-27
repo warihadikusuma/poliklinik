@@ -11,6 +11,9 @@
         align-items: center;
         justify-content: center;
         height: 100vh; /* Mengisi tinggi seluruh viewport */
+        background: url("/image/who.png");
+        background-size: cover;
+        background-color: #f8f9fa;
     }
 
     .login-box {
