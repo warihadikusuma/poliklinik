@@ -1,5 +1,5 @@
-# poli_naufal
+# poliklinik
 
-# Nama : Naufal Nabil Nurherdian
+# Nama : Warih Adi Kusuma
 
-# NIM : A11.2020.13010
+# NIM : A11.2020.12821
