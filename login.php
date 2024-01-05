@@ -98,7 +98,7 @@
 <body>
     <div class="login-container">
         <div class="left-container">
-            <img src="asset/images/hospital.jpg" alt="Login Image">
+            <img src="asset/images/hostpital 1.png" alt="Login Image">
         </div>
         <div class="right-container">
             <div class="login-form">
@@ -115,7 +115,7 @@
                 </form>
 
                 <div class="register-link">
-                <p><b>Belum Punya Akun?</b> <a href="register.php">Registrasi disini</a></p>
+                    <p><b>Belum Punya Akun?</b> <a href="register.php">Registrasi disini</a></p>
                 </div>
             </div>
         </div>

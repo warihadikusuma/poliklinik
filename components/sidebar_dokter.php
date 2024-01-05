@@ -54,7 +54,7 @@ $nama = $_SESSION['nama']; // Ambil nama dari session
                 </a>
             </li>
             <li class="nav-item">
-                <a href="index.php?page=periksa" class="nav-link">
+                <a href="home_jadwal_periksa.php" class="nav-link">
                     <i class="nav-icon fas fa-notes-medical"></i>
                     <p>Jadwal Periksa</p>
                 </a>
@@ -72,7 +72,7 @@ $nama = $_SESSION['nama']; // Ambil nama dari session
                 </a>
             </li>
             <li class="nav-item">
-                <a href="index.php?page=riwayatpasien" class="nav-link">
+                <a href="home_profile.php" class="nav-link">
                     <i class="nav-icon fas fa-history"></i>
                     <p>Profile</p>
                 </a>

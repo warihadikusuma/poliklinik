@@ -99,7 +99,7 @@ $nama = $_SESSION['nama']; // Ambil nama dari session
             <a href="home_poli.php" class="nav-link">
               <i class="nav-icon fas fas fa-clinic-medical"></i>
               <p>
-                 Poli Klinik
+                 Poliklinik Warih
                 <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>
