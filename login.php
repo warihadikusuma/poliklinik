@@ -14,7 +14,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #a6e9a6;
+            background-color: #1D2B53;
         }
 
         .login-container {
@@ -22,7 +22,7 @@
             max-width: 1200px;
             /* Ubah max-width sesuai kebutuhan */
             background-color: #fff;
-            color: #186218;
+            color: black;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -98,66 +98,33 @@
 <body>
     <div class="login-container">
         <div class="left-container">
-            <img src="asset/images/hostpital 1.png" alt="Login Image">
+            <img src="assets/images/logo poliklinik.png" alt="Login Image">
         </div>
         <div class="right-container">
             <div class="login-form">
-                <h2>Login </h2>
-                <form id="loginForm">
+                <h4 class="text-center">Login </h4>
+                <p class="login-box-msg text-center">Silahkan login sebagai <b class="text-success">Dokter</b> untuk melanjutkan</p>
+                <br><br>
+                <form action="pages/login/checkLogin.php" method="post">
                     <label for="nama">Username :</label>
-                    <input type="text" id="nama" name="nama" required>
+                    <input type="text" class="form-control" name="username" required>
 
-                    <label for="no_hp">Nomor Handphone :</label>
-                    <input type="password" id="no_hp" name="no_hp" required>
+                    <label for="no_hp">Password :</label>
+                    <input type="password" class="form-control" name="password" required>
 
-                    <button type="button" class="btn btn-primary btn-block" onclick="loginUser()">Login</button>
-
+                    <button type="submit" class="btn btn-block btn-success">
+                        Login
+                    </button>
                 </form>
 
-                <div class="register-link">
-                    <p><b>Belum Punya Akun?</b> <a href="register.php">Registrasi disini</a></p>
-                </div>
+            </div>
+            <div class="text-center mt-3">Login Sebagai <a href="loginUser.php"><span
+                        class="text-primary">Pasien</span></a>
             </div>
         </div>
     </div>
+    </div>
 
-    <script>
-        function loginUser() {
-            var nama = document.getElementById('nama').value;
-            var no_hp = document.getElementById('no_hp').value;
-
-            // Kirim data ke PHP untuk proses login
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'process_login.php');
-            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    var response = JSON.parse(xhr.responseText);
-                    if (response.status === 'success') {
-                        // Handle login berhasil
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Login Berhasil!',
-                            text: response.welcome_message,
-                            timer: 3000,
-                            showConfirmButton: false
-                        }).then(function () {
-                            window.location.href = response.redirect_url;
-                        });
-                    } else {
-                        // Handle login gagal
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Login Gagal',
-                            text: response.message
-                        });
-                    }
-                }
-            };
-            var params = 'nama=' + nama + '&no_hp=' + no_hp;
-            xhr.send(params);
-        }
-    </script>
 </body>
 
 </html>
