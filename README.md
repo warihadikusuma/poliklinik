@@ -1,8 +1,8 @@
 ## Admin
 
-#username dan passwor admin
-#username : Admin
-#password : admin
+# username dan passwor admin
+# username : Admin
+# password : admin
 
 # Poliklinik Warih
 # Nama: Warih Adi Kusuma
